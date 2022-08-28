@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185deg, 41%, 84%);
+  padding: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(6, 103, 101);
+  border: none;
+  border-radius: 5px;
+  color: rgb(252, 252, 252);
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.15s ease-in;
+}
+.btn:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(185deg, 41%, 84%);
+}
+.btn__active {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+}
+.btn__custom {
+  color: hsl(183deg, 100%, 15%);
+  background-color: rgb(232, 243, 242);
+  padding: 0 10px;
+}
+
+p {
+  color: hsl(186deg, 14%, 43%);
+}
+
+main {
+  width: 700px;
+  min-height: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  gap: 30px;
+}
+main .bill {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .bill * {
+  font-weight: 700;
+}
+main .bill_input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .bill_input_div {
+  background-color: hsl(189deg, 41%, 97%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+main .bill_input_div input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  text-align: right;
+  font-size: 18px;
+  color: hsl(183deg, 100%, 15%);
+}
+main .bill_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .bill_buttons .buttons {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main .bill_buttons .buttons .btn__custom {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+main .bill_buttons .buttons .btn__custom input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+main .tip {
+  width: 45%;
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(183deg, 100%, 15%);
+}
+main .tip * {
+  font-weight: 700;
+}
+main .tip_amount {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .tip_amount .tip_amounts {
+  display: flex;
+  justify-content: space-between;
+}
+main .tip_amount .tip_amounts_info {
+  color: rgb(252, 252, 252);
+}
+main .tip_amount .tip_amounts_info p:nth-child(1) {
+  color: rgb(232, 243, 242);
+}
+main .tip_amount .tip_amounts_info p:nth-child(2) {
+  color: hsl(184deg, 14%, 56%);
+}
+main .tip_amount .tip_amounts h1 {
+  color: hsl(172deg, 67%, 45%);
+}
+main .tip .btn {
+  width: 100%;
+  height: 35px;
+  bottom: 0;
+}
+
+.error {
+  outline: 2px solid red;
+}
+
+.correct {
+  outline: 2px solid hsl(184deg, 14%, 56%);
+}
+
+.errordiv {
+  color: red;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 740px) {
+  main {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .bill,
+main .tip {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

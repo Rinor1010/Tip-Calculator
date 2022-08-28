@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Space+Mono:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="script.js" defer></script>
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="bill">
+        <div class="bill_input">
+          <p>Bill</p>
+          <div class="bill_input_div" id="billHtml">
+            <img src="./images/icon-dollar.svg" alt="" />
+            <input type="text" name="" id="bill" />
+          </div>
+          <div class="errordiv1"></div>
+        </div>
+        <div class="bill_buttons">
+          <p>Select Tip</p>
+          <div class="buttons">
+            <button class="btn" value="5">5%</button>
+            <button class="btn" value="10">10%</button>
+            <button class="btn btn__active" value="15">15%</button>
+            <button class="btn" value="20">20%</button>
+            <button class="btn" value="25">25%</button>
+            <button class="btn btn__custom">
+              <input type="number" id="custom" value="" placeholder="Custom" />
+            </button>
+          </div>
+        </div>
+        <div class="bill_input">
+          <p>Number Of People</p>
+          <div class="bill_input_div" id="personHtml">
+            <img src="./images/icon-person.svg" alt="" />
+            <input type="text" name="" id="person" />
+          </div>
+          <div class="errordiv2"></div>
+        </div>
+      </div>
+      <div class="tip">
+        <div class="tip_amount">
+          <div class="tip_amounts">
+            <div class="tip_amounts_info">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <h1 id="tipAmount">$0.00</h1>
+          </div>
+          <div class="tip_amounts">
+            <div class="tip_amounts_info">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <h1 id="total">$0.00</h1>
+          </div>
+        </div>
+        <button class="btn btn__active" id="reset">RESET</button>
+      </div>
+    </main>
+  </body>
+</html>
