@@ -87,6 +87,12 @@ main .bill_input_div input {
   font-size: 18px;
   color: hsl(183deg, 100%, 15%);
 }
+main .bill_input .errordiv1,
+main .bill_input .errordiv2 {
+  color: red;
+  font-size: 16px;
+  font-weight: 700;
+}
 main .bill_buttons {
   width: 100%;
   display: flex;
@@ -160,12 +166,6 @@ main .tip .btn {
 
 .correct {
   outline: 2px solid hsl(184deg, 14%, 56%);
-}
-
-.errordiv {
-  color: red;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 @media (max-width: 740px) {

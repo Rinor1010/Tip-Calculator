@@ -90,6 +90,12 @@ main {
           color: $vdarkcyan;
         }
       }
+      .errordiv1,
+      .errordiv2 {
+        color: red;
+        font-size: 16px;
+        font-weight: 700;
+      }
     }
     &_buttons {
       width: 100%;
@@ -168,12 +174,6 @@ main {
 
 .correct {
   outline: 2px solid $graytcyan;
-}
-
-.errordiv {
-  color: red;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 @media (max-width: 740px) {

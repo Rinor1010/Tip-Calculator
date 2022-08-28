@@ -38,13 +38,14 @@ document.addEventListener("input", () => {
     billHtml.classList.remove("correct");
     billHtml.classList.add("error");
     errordiv1.innerText = `Invalid Input!`;
+    errordiv1.classList.add("errordiv1");
   } else {
     billHtml.classList.remove("error");
     billHtml.classList.add("correct");
     errordiv1.innerText = "";
     calculate();
   }
-  if (/[A-z]/i.test(person.value)) {
+  if (/[A-z]/i.test(person.value) || person.value < 1) {
     personHtml.classList.remove("correct");
     personHtml.classList.add("error");
     errordiv2.innerText = `Invalid Input!`;
